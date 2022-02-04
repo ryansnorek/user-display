@@ -74,7 +74,6 @@ input {
   margin-left: 1rem;
   font-size: 1rem;
   font-weight: 300;
-  font-family: 'Raleway', sans-serif;
 }
 .tags {
   display: flex;
@@ -82,6 +81,7 @@ input {
 .tag-input {
   border-bottom: 1px solid black;
   width: 100px;
+  color: black;
 }
 .tags p {
   width: min-content;
