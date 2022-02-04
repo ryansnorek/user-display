@@ -95,17 +95,25 @@ input {
   padding: 0.5rem;
   box-shadow: 0 0 3px #bdbdbd;
   border-radius: 9px;
+  display: flex;
+  justify-content: center;
 }
 .data {
   margin-left: 1rem;
+  width: 100%;
 }
 .data p {
   padding: 0.3rem;
+}
+.button-container {
+  text-align: center;
 }
 .data button {
   font-size: 1rem;
   background-color: #4f4f4f;
   border-radius: 4px;
+  margin: 0.3rem;
+  padding: 0.5rem;
 }
 .green {
   color: lime;

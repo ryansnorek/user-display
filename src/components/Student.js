@@ -29,12 +29,14 @@ export default function Student({ student, query }) {
             <div className="data">
               <p>Username: {student.login.username}</p>
               <p>Password: {decode ? student.login.password : student.login.sha1.slice(0, 16)}</p>
-              <button 
+             <div className="button-container">
+             <button 
                 className={decode ? "green" : "yellow"}
                 onClick={() => setDecode(!decode)}
                 >
                   {decode ? "Encrypt" : "Decrypt"}
               </button>
+             </div>
             </div>
           </div>
           <div className="tags">
