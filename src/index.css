@@ -1,0 +1,124 @@
+body {
+  margin: 0 auto;
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.wrapper {
+  width: 100vw;
+  height: 100%;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+input {
+  outline: none;
+  border: none;
+  color: #4f4f4f;
+  padding: 0.6rem;
+}
+/* SEARCH / HEADER -=-==--==-=-=--=-=-=-==--=-=-= */
+.search {
+  width: 100vw;
+  z-index: 3;
+  top: 0;
+  height: 100px;
+  position: fixed;
+}
+.search input {
+  width: 100%;
+  border-bottom: 1px solid #d1d1d1;
+  font-size: 1.5rem;
+}
+.search input:focus {
+  border-bottom: 1px solid #181818;
+}
+::placeholder {
+  color: #bdbdbd;
+}
+.display-container {
+  margin-top: 95px;
+}
+/* STUDENTS -=-==--==-=-=--=-=-=-==--=-=-= */
+.students {
+  overflow: scroll;
+  height: 100vh;
+}
+.student {
+  display: flex;
+  width: 600px;
+}
+.student .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+.student h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #4f4f4f;
+}
+.student .details {
+  line-height: 0.5;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+.tags {
+  display: flex;
+}
+.tag-input {
+  border-bottom: 1px solid black;
+  width: 100px;
+}
+.tags p {
+  width: min-content;
+  padding: 0.68rem;
+  margin: 0.3rem;
+  background-color: #bdbdbd;
+  border-radius: 5px;
+}
+.data-container {
+  margin: 2rem 0;
+  padding: 0.5rem;
+  box-shadow: 0 0 3px #bdbdbd;
+  border-radius: 9px;
+}
+.data {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* width: 6rem; */
+  margin-left: 1rem;
+}
+.data p {
+  padding: 0.3rem;
+}
+.student img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  border: 1px solid #bdbdbd;
+  margin: 1rem;
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #bdbdbd;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
