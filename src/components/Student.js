@@ -18,7 +18,7 @@ export default function Student({ student, query }) {
 
   return (
     <div className={`student ${!toggleView && "hide"}`}>
-      <img src={student.picture.medium} alt="profile" />
+      <img src={student.picture.large} alt="profile" />
       <div className="text">
         <h2>{studentName}</h2>
         <div className="details">

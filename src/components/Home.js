@@ -16,7 +16,7 @@ export default function Home() {
                     students.map((student) => {
                         return (
                             <Student 
-                                key={student.id} 
+                                key={student.login.uuid} 
                                 student={student} 
                                 query={query}
                             />

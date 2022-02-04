@@ -10,6 +10,7 @@ export default function useStudents() {
     axios
       .get(`${BASE_URL}/api/?results=50`)
       .then((res) => {
+        console.log(res.data.results)
         setStudents(res.data.results);
       })
       .catch((err) => {
