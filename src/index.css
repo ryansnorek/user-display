@@ -20,7 +20,7 @@ code {
 input {
   outline: none;
   border: none;
-  color: #4f4f4f;
+  color: snow;
   padding: 0.6rem;
 }
 /* SEARCH / HEADER -=-==--==-=-=--=-=-=-==--=-=-= */
@@ -35,9 +35,10 @@ input {
   width: 100%;
   border-bottom: 1px solid #d1d1d1;
   font-size: 1.5rem;
+  background-color: rgba(18, 22, 18, 0.8);
 }
 .search input:focus {
-  border-bottom: 1px solid #181818;
+  background-color: rgba(26, 32, 26, 0.8);
 }
 ::placeholder {
   color: #bdbdbd;
