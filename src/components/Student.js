@@ -13,6 +13,7 @@ export default function Student({ student, query }) {
 
   // View conditions
   const [expand, setExpand] = useState(false);
+  const [decode, setDecode] = useState(false);
   const toggleView = viewStudent(query, studentName, tags);
 
   return (
@@ -27,7 +28,13 @@ export default function Student({ student, query }) {
           <div className={`data-container ${expand ? "" : "hide"}`}>
             <div className="data">
               <p>Username: {student.login.username}</p>
-              <p>Password: {student.login.password}</p>
+              <p>Password: {decode ? student.login.password : "xxxxxxxxxx"}</p>
+              <button 
+                className={decode ? "green" : "yellow"}
+                onClick={() => setDecode(!decode)}
+                >
+                  {decode ? "Encrypt" : "Decrypt"}
+              </button>
             </div>
           </div>
           <div className="tags">

@@ -96,13 +96,21 @@ input {
   border-radius: 9px;
 }
 .data {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* width: 6rem; */
   margin-left: 1rem;
 }
 .data p {
   padding: 0.3rem;
+}
+.data button {
+  font-size: 1rem;
+  background-color: #4f4f4f;
+  border-radius: 4px;
+}
+.green {
+  color: lime;
+}
+.yellow {
+  color: yellow;
 }
 .student img {
   width: 180px;
