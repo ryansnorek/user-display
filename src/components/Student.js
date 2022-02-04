@@ -6,7 +6,6 @@ export default function Student({ student, query }) {
   // Student details
   const { name } = student;
   const studentName = `${name.first} ${name.last}`.toLowerCase();
-  // const average = getAverage(grades);
 
   // Tags 
   const [input, handleChange, tags, addNewTag] = useTags();
