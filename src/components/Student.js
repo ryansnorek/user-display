@@ -3,14 +3,11 @@ import viewStudent from "../helper/viewStudent";
 import useTags from "../hooks/useTags";
 
 export default function Student({ student, query }) {
-  // Student details
   const { name } = student;
   const studentName = `${name.first} ${name.last}`.toLowerCase();
 
-  // Tags 
   const [input, handleChange, tags, addNewTag] = useTags();
 
-  // View conditions
   const [expand, setExpand] = useState(false);
   const [decode, setDecode] = useState(false);
   const toggleView = viewStudent(query, studentName, tags);
